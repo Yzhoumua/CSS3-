@@ -1,0 +1,29 @@
+html,body{
+    height: 100%;
+    width: 100%;
+  
+   
+}
+body{
+    background: -webkit-radial-gradient(center center,500px 500px,rgba(84, 0, 70), rgba(255, 255, 255, 0));
+    background-color: black;
+    perspective: 1300px;
+    overflow: hidden;
+}
+
+body .wapper{
+    position: relative;
+    transform-origin: center center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+body .wapper img{
+    width: 200px;
+    height:200px;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    -webkit-box-reflect:below 5px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.5) 100%);
+}
